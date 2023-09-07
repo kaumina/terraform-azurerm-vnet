@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "vnet-rg" {
-    name     = vnet-resource-group
-    location = westus
+    name     = "vnet-resource-group"
+    location = "westus"
 }
 
 resource "azurerm_virtual_network" "vnet" {
