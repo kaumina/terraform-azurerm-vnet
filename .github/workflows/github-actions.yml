@@ -22,13 +22,13 @@ jobs:
         terraform_version: 1.0.0  # Use the version of Terraform you need
 
     - name: Initialize Terraform
-      run: terraform init ./terraform
+      run: terraform init 
 
     - name: Validate Terraform
-      run: terraform validate ./terraform
+      run: terraform validate 
 
     - name: Plan Terraform
-      run: terraform plan -input=false -out=tfplan ./terraform
+      run: terraform plan -input=false -out=tfplan
 
     - name: Apply Terraform
       run: terraform apply -input=false tfplan -auto-approve      
